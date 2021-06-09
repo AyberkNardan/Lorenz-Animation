@@ -11,7 +11,7 @@ def f_lorenz(t,y):
 
 t = np.linspace(0,50,5000)
 y = list()
-for x0,y0,z0 in zip([1,2,10],[2,4,5],[4,8,12]):
+for x0,y0,z0 in zip([1,2,10],[2,4,5],[4,8,12]): #Arbitrary initial conditions.
       solnLorenz = si.solve_ivp(fun=f_lorenz, t_span=[0,50], y0=[x0,y0,z0],dense_output=True)
       y.append(solnLorenz.sol(t))
 
