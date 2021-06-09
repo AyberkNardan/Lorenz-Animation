@@ -40,6 +40,7 @@ def update(i):
             ax.set_xlim(-30,30)
             ax.set_ylim(-30,30)
             ax.set_zlim(0,50)
+            
       elif 40<i<50:
             ax.view_init(elev=360,azim=i/10)
             xv = y[0][0][i:i+dataSkip]
@@ -59,7 +60,6 @@ def update(i):
             ax.set_zlim(0,50)
 
       else:
-            
             ax.view_init(elev=360,azim=i/10)
             xv = y[0][0][i:i+dataSkip]
             yv = y[0][1][i:i+dataSkip]
